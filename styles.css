@@ -7,9 +7,10 @@
     background-image:  url("./images/ChessSet.jpg");
     background-position: center;
     background-size: cover ;
+    background-attachment: fixed;
 }
 
-#hello h1, #magnus h1{
+#hello h1, #magnus h1, #hikaru h1{
     font-size: 40px;
     color: white;
     text-align: center;
@@ -36,6 +37,22 @@
 
 
 #magnus h1{
+
+    color:red;
+
+}
+
+
+#hikaru{
+    height: 100vh;
+    background-image:  url("./images/HikaruBackground1.jpg");
+    background-position: center;
+    background-size: cover ;
+    color: black;
+}
+
+
+#hikaru h1{
 
     color:red;
 
