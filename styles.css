@@ -10,7 +10,7 @@
     background-attachment: fixed;
 }
 
-#hello h1, #magnus h1, #hikaru h1{
+#hello h1, #magnus h1, #hikaru h1, #gary h1{
     font-size: 40px;
     color: white;
     text-align: center;
@@ -56,4 +56,35 @@
 
     color:red;
 
+}
+
+
+#gary{
+    height: 120vh;
+    background-image:  url("./images/GarryKasparovBackground1.jpg");
+    background-position: center;
+    background-size: cover ;
+    color: black;
+  
+}
+
+
+#gary h1{
+
+    color:red;
+
+}
+
+
+#aboutMe{
+
+   background-color: aqua;
+   text-align: center;
+   min-height: 50vh;
+
+}
+
+#aboutMe img{
+
+    height: 300px
 }
