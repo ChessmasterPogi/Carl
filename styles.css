@@ -1,0 +1,42 @@
+#navbar{
+    background-color: skyblue;
+}
+
+#hello{
+    height: 50vh;
+    background-image:  url("./images/ChessSet.jpg");
+    background-position: center;
+    background-size: cover ;
+}
+
+#hello h1, #magnus h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+
+}
+
+#hello h2{
+    
+    color: red;
+    text-align: center;
+
+
+
+}
+
+#magnus{
+    height: 100vh;
+    background-image:  url("./images/MagnusBackground.jpg");
+    background-position: center;
+    background-size: cover ;
+    color: white;
+}
+
+
+#magnus h1{
+
+    color:red;
+
+}
