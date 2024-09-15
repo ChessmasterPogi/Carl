@@ -28,7 +28,7 @@
 }
 
 #magnus{
-    height: 100vh;
+    height: 120vh;
     background-image:  url("./images/MagnusBackground.jpg");
     background-position: center;
     background-size: cover ;
@@ -44,11 +44,11 @@
 
 
 #hikaru{
-    height: 100vh;
+    height: 120vh;
     background-image:  url("./images/HikaruBackground1.jpg");
     background-position: center;
     background-size: cover ;
-    color: black;
+    color: white;
 }
 
 
@@ -64,7 +64,7 @@
     background-image:  url("./images/GarryKasparovBackground1.jpg");
     background-position: center;
     background-size: cover ;
-    color: black;
+    color: white;
   
 }
 
@@ -76,15 +76,92 @@
 }
 
 
+#vishy{
+    height: 120vh;
+    background-image:  url("./images/vishybackground.jpg");
+    background-position: center;
+    background-size: cover ;
+    color: white;
+  
+}
+
+
+#vishy h1{
+
+    color:red;
+    text-align: center;
+
+}
+
+
+
+
 #aboutMe{
 
    background-color: aqua;
    text-align: center;
    min-height: 50vh;
+   background-size: cover
+
 
 }
 
 #aboutMe img{
 
     height: 300px
+}
+
+#signup {
+
+   
+    text-align: center;
+
+}
+
+#signUpBackground{
+
+    background-color: #83fcb8;
+
+
+
+}
+
+
+
+
+
+/* Carousel */
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
 }

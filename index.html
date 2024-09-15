@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Carls Website</title>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
-<body>
+<div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
@@ -43,58 +50,161 @@
 
 
         <!-- Cards Images -->
-        <div class="container">
-            <div class="row">
-                <div class="card col" style="width: 18rem;">
-                    <!-- Modal Magnus -->
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./images/Magnus.jpg" class="card-img-top" alt="..." height = "300px">
-                      </button>
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto">
+              <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                  <div class="carousel-inner w-100" role="listbox">
                     
-                    <div class="card-body">
-                      <h5 class="card-title">Magnus Carlsen</h5>
-                      <p class="card-text">One of the greatest chess of all time</p>
-                      <a href="./Magnus.html" class="btn btn-primary">Go to Magnus Carlsen</a>
-                    </div>
-                  </div>
-                  <div class="card col" style="width: 18rem;">
+                    <!-- Hikaru -->
+                    
+                    <div class="carousel-item active">
+                          <div class="col-md-4">
+                              <div class="card card-body">
+                                  <button style="border: none; background: none;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                      <img class="img-fluid" src="./images/Hikaru.jpg" style="height: 200px">
+                                  </button>
+                                  <div class="card-body">
+                                      <h5 class="card-title">Hikaru Nakamura</h5>
+                                      <p class="card-text">He is a rival of Magnus.</p>
+                                      <a href="./Hikaru.html" class="btn btn-primary">Go to Hikaru Nakamura</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
 
-                    <!-- Modal Hikaru -->
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal2"> <img src="./images/Hikaru.jpg" class="card-img-top" alt="..." height = "300px"></button>
-                   
-                    <div class="card-body">
-                      <h5 class="card-title">Hikaru Nakamura</h5>
-                      <p class="card-text">He is a rival of Magnus.</p>
-                      <a href="./Hikaru.html" class="btn btn-primary">Go to Hikaru Nakamura</a>
+                      <!-- Gary -->
+                      <div class="carousel-item">
+                          <div class="col-md-4">
+                              <div class="card card-body">
+                                  <button style="border: none; background: none;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                      <img class="img-fluid" src="./images/GarryKasparov.jpg" style="height: 200px">
+                                  </button>
+                                  <div class="card-body">
+                                      <h5 class="card-title">Gary Kasparov</h5>
+                                      <p class="card-text">One of the best players of all time.</p>
+                                      <a href="./Gary.html" class="btn btn-primary">Go to Garry Kasparov</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Magnus -->
+
+                      <div class="carousel-item">
+                          <div class="col-md-4">
+                              <div class="card card-body">
+                                  <button style="border: none; background: none;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      <img class="img-fluid" src="./images/Magnus.jpg" style="height: 200px">
+                                  </button>
+                                  <div class="card-body">
+                                      <h5 class="card-title">Magnus Carlsen</h5>
+                                      <p class="card-text">One of the greatest chess of all time</p>
+                                      <a href="./Magnus.html" class="btn btn-primary">Go to Magnus Carlsen</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <!-- Vishy Anand -->
+
+                      <div class="carousel-item">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <button style="border: none; background: none;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                    <img class="img-fluid" src="./images/Vishy.jpg" style="height: 200px">
+                                </button>
+                                <div class="card-body">
+                                    <h5 class="card-title">Vishwanathan Anand</h5>
+                                    <p class="card-text">Old former world champion.</p>
+                                    <a href="./Vishy.html" class="btn btn-primary">Go to Vishy Anand</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div><div class="card col" style="width: 18rem;">
-                    <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"> <img src="./images/GarryKasparov.jpg" class="card-img-top" alt="..." height = "300px">
-                    <div class="card-body"> </button>
-                   
-                      <h5 class="card-title">Gary Kasparov</h5>
-                      <p class="card-text">One of the best players of all time.</p>
-                      <a href="./Gary.html" class="btn btn-primary">Go to Garry Kasparov</a>
-                    </div>
+                      <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                         
+                      </a>
+                      <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                          
+                      </a>
                   </div>
-            </div>
-        </div>
+              </div>
+              <h5 class="mt-2">Advances one slide at a time</h5>
+          </div>
+          </div>
+
+      </div>
+
 
 
         
 
         <!-- New Script -->
 
-      </div>
+    </div>
 
 
-      <div class="container" id="aboutMe">
+      <!-- About Me -->
+
+              <!-- To extend the background to full (container-fluid)  -->
+      <div class="container-fluid" id="aboutMe">
         <div class="row">
             <div class="col"><h1> About Me </h1>
             <img src="./images/Carl.png" class="img-fluid">
-            <p><h2> Hi! I'm Carl Andrew Gomez. From Dasmarinas Cavite  </h2></p>
+            <p><h2> Hi! I'm Carl Andrew Gomez. From Dasmarinas Cavite. I'm aspiring to be a web developer.  </h2></p>
             </div>
         </div>
       </div>
+
+
+
+      <!-- Sign Up -->
+
+      <div class="container-fluid" id="signUpBackground">
+        <div class="row">
+         
+          <div class="col">    <h1 id="signup"> Sign Up</h1>
+        
+                                                                            <!-- Padding: 5 -->
+          <form action="http://localhost:4000/users/register" method="POST" class="p-5">       
+        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+        <input type="text" class="form-control col-6" id="exampleFormControlInput1" name="firstName" placeholder="firstname">
+
+        <label for="exampleFormControlInput1" class="form-label">LastName</label>
+        <input type="text" class="form-control col-6" id="exampleFormControlInput1"  name="lastName" placeholder="lastname">
+        
+        <label for="exampleFormControlInput1" class="form-label col">Email address</label>
+        <input type="email" class="form-control " id="exampleFormControlInput1"  name="email" placeholder="name@example.com">
+
+        <label for="exampleFormControlInput1" class="form-label col">Password</label>
+        <input type="password" class="form-control" id="exampleFormControlInput1"  name="password" placeholder="password">
+
+
+        <br />
+
+        <button class="btn btn-success" type="submit">Sign Up</button>
+      </form>
+</div>
+
+
+        
+
+        </div>
+      </div>
+
+    
+
+
+
+
+
+
+
+
+      
 
 
 
@@ -150,7 +260,35 @@
         </div>
       </div>
 
+
+      <!-- Modal vishy -->
+
+
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+             
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./images/Vishy.jpg" class="card-img-top" alt="..." height = "300px">
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+
+      <script type="text/javascript" src="./script.js"></script>
+
       <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+
+    
 </body>
 </html>
