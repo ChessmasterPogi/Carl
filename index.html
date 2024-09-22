@@ -33,7 +33,7 @@
 
                                     <!-- Go to About Me -->
               <a class="nav-link" href="#aboutMe">About Me</a>
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#signup">Sign Up</a>
               <a class="nav-link" href="#">Contacts</a>
             </div>
           </div>
@@ -41,7 +41,7 @@
       </nav>
       <div class="container-fluid">
         <div class="row">
-            <div class="col-12 bg-warning" id="hello">
+            <div class="col-12 bg-warning p-5" id="hello">
                 <h1>Welcome to my website!</h1>
                 <h2> Chess
                 </h2>
@@ -122,6 +122,28 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- List of World Chess Champions -->
+
+                    <div class="carousel-item">
+                      <div class="col-md-4">
+                          <div class="card card-body">
+                              <button style="border: none; background: none;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                  <img class="img-fluid" src="./images/chessChampions.png" style="height: 200px">
+                              </button>
+                              <div class="card-body">
+                                  <h5 class="card-title">List of World Chess Champions</h5>
+                                  <p class="card-text">List of World Chess Champions</p>
+                                  <a href="./chessChampions.html" class="btn btn-primary">Go to World Chess Champions</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
                       <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
                           <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                          
@@ -132,7 +154,7 @@
                       </a>
                   </div>
               </div>
-              <h5 class="mt-2">Advances one slide at a time</h5>
+              <!-- <h5 class="mt-2">Advances one slide at a time</h5> -->
           </div>
           </div>
 
@@ -151,11 +173,17 @@
 
               <!-- To extend the background to full (container-fluid)  -->
       <div class="container-fluid" id="aboutMe">
-        <div class="row">
-            <div class="col"><h1> About Me </h1>
-            <img src="./images/Carl.png" class="img-fluid">
-            <p><h2> Hi! I'm Carl Andrew Gomez. From Dasmarinas Cavite. I'm aspiring to be a web developer.  </h2></p>
+
+        <div class="row"> 
+            <div class="col text-center pt-5"><h1 style="font-weight:700"> About Me </h1>
+           
+           
             </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-center"> <img src="./images/Carl.png" class="img-fluid"></div>
+          <div class="col"> <p><h2> Hi! I'm Carl Andrew Gomez. From Dasmarinas Cavite. I'm aspiring to be a web developer.  </h2></p></div>
         </div>
       </div>
 
@@ -166,7 +194,7 @@
       <div class="container-fluid" id="signUpBackground">
         <div class="row">
          
-          <div class="col">    <h1 id="signup"> Sign Up</h1>
+          <div class="col pt-5" >    <h1 id="signup"> Sign Up</h1>
         
                                                                             <!-- Padding: 5 -->
           <form action="http://localhost:4000/users/register" method="POST" class="p-5">       
@@ -278,6 +306,26 @@
           </div>
         </div>
       </div>
+
+
+        <!--Modal List of World Chess Champions  -->
+      
+      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+             
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./images/chessChampions.png" class="card-img-top" alt="..." height = "300px">
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+
 
 
       <script type="text/javascript" src="./script.js"></script>

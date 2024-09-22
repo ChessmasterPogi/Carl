@@ -33,7 +33,7 @@ app.use("/users", userRoutes);
 
 
 if (require.main == module){
-    app.listen(process.env.PORT , () =>{
+    app.listen(4000 , () =>{
         console.log(`API is now online on port ${process.env.PORT} `);
 
     }) 

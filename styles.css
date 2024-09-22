@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+
+}
+
 #navbar{
     background-color: skyblue;
 }
@@ -14,6 +21,9 @@
     font-size: 40px;
     color: white;
     text-align: center;
+
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
 
 
 }
@@ -96,10 +106,32 @@
 
 
 
+#chessChampions{
+    height: 1000vh;
+    background-color: silver;
+    background-position: center;
+    background-size: cover ;
+    color: black;
+  
+}
+
+
+#chessChampions h1{
+
+    color:red;
+    text-align: center;
+
+}
+
+
+
+
+
 #aboutMe{
 
-   background-color: aqua;
-   text-align: center;
+
+   background-image: linear-gradient(180deg, cyan, yellow);
+   
    min-height: 50vh;
    background-size: cover
 
@@ -113,14 +145,22 @@
 
 #signup {
 
-   
+
     text-align: center;
+    font-weight: 700;
+
+}
+
+
+#signup h1 {
+
+    font-weight: 700;
 
 }
 
 #signUpBackground{
 
-    background-color: #83fcb8;
+    background-color: yellow;
 
 
 
